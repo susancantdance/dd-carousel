@@ -1,0 +1,89 @@
+.container {
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero {
+  background-color: aqua;
+  width: 100%;
+  font-size: 80px;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menubar {
+  background-color: brown;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
+  width: 50%;
+}
+
+/* .cats-dd {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  background-color: green;
+  width: 200px;
+  justify-self: center;
+} */
+
+.cats,
+.links {
+  background-color: pink;
+  font-size: 20px;
+  margin: 0px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  grid-row: 1;
+}
+
+.cats {
+  grid-column: 1;
+  align-self: end;
+}
+
+.links {
+  grid-column: 2;
+  align-self: end;
+}
+
+.cats-ul,
+.links-ul {
+  justify-self: center;
+  width: 100px;
+  background-color: pink;
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px 0px 0px 0px;
+}
+
+.cats-ul {
+  grid-column: 1;
+}
+.links-ul {
+  grid-column: 2;
+}
+
+.cats-option,
+.links-option {
+  list-style: none;
+  margin-left: 20px;
+  justify-self: start;
+  align-self: center;
+}
+
+.invisible {
+  display: none;
+  justify-self: center;
+}
